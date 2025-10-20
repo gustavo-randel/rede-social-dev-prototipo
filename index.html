@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
     <title>DevHub</title>
 </head>
-<body>
+<body class=" d-flex flex-column min-vh-100">
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
@@ -34,7 +34,7 @@
                             <button class="btn btn-outline-primary rounded-5" type="submit"><i class="bi bi-search"></i></button>
                         </form>
 
-                        <li class="dropdown dropdown-center nav-item list-unstyled bg-primary p-2 rounded-2 ">
+                        <li class="dropdown dropdown-center nav-item list-unstyled bg-primary p-2 rounded-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Options
                             </a>
@@ -55,10 +55,10 @@
     <main class="container">
         <div class="row">
             <!-- Sidebar -->
-            <aside class="col-3">
+            <aside class="col-3 sidebar">
                 <nav class="navbar bg-body-tertiary p-3 m-3 rounded shadow">
                     <ul class="navbar-nav">
-                        <h3>Navigation</h3>
+                        <h5>Navigation</h5>
                             <li class="nav-item">
                             <a class="nav-link text-primary" aria-current="page" href="#"><i class="bi bi-person"></i> Profile</a>
                             </li>
@@ -82,34 +82,134 @@
                 </nav>
             </aside>
             <!-- Main content -->
-            <section class="col-7 my-3 ">
-                <article class="d-flex gap-3 bg-body-tertiary rounded p-4 shadow">
-                    <img src="src/images/premium_photo-1689568126014-06fea9d5d341.jpg" alt="" width="50px" height="50px" class="rounded-circle"><input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+            <section class="col-12 col-lg-6 my-3 ">
+                <article class="d-flex gap-3 bg-body-tertiary rounded p-3 shadow">
+                    <img src="src/images/premium_photo-1689568126014-06fea9d5d341.jpg" alt="" width="50px" height="50px" class="rounded-circle"> <input id="newPostBtnInput" class="form-control px-3 py-2" type="text" placeholder="What have you been building?">
                 </article>
                 <hr>
                 <!-- Post -->
-                <article class="bg-body-tertiary bg-body-tertiary rounded p-4 shadow ">
+                <article class="bg-body-tertiary bg-body-tertiary rounded p-3 pb-0 my-3 shadow rounded">
                     <div class="d-flex flex-row gap-3">
-                        <img src="src/images/premium_photo-1689568126014-06fea9d5d341.jpg" alt="" width="50px" height="50px" class="rounded-circle"> <p class="d-flex flex-column gap-1"><strong>John Doe</strong> <span class="text-emphasis">2 hours ago</span> </p>
+                        <img src="src/images/premium_photo-1689568126014-06fea9d5d341.jpg" alt="" width="50px" height="50px" class="rounded-circle"> <p class="d-flex flex-column gap-1"><strong>Peixe de allstar</strong> <span class="text-emphasis">2 hours ago</span></p>
                     </div>
                     <div class="py-3 px-1">
-                        <p>Looking for a collaborator for my React app. DM me!</p>
+                        <p>Eu gosto de pudim.</p>
                     </div>
                     <hr>
-                    <div>
-
+                    <div class="d-flex justify-content-around">
+                        <p> <i class="bi bi-hand-thumbs-up px-1"></i> Like</p>
+                        <p> <i class="bi bi-chat px-1"></i> Comment</p>
+                        <p> <i class="bi bi-share px-1"></i> Share</p>
                     </div>
                 </article>
+
+                <article class="bg-body-tertiary bg-body-tertiary rounded p-3 pb-0 my-3 shadow rounded">
+                    <div class="d-flex flex-row gap-3">
+                        <img src="src/images/minimalist-pickle-rick-rh0wcfyj4u556stl.jpg" alt="" width="50px" height="50px" class="rounded-circle"> <p class="d-flex flex-column gap-1"><strong>Pickle rick</strong> <span class="text-emphasis">6 hours ago</span> </p>
+                    </div>
+                    <div class="py-3 px-1">
+                        <p>Funniest shit ive ever seen.</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-around">
+                        <p> <i class="bi bi-hand-thumbs-up px-1"></i> Like</p>
+                        <p> <i class="bi bi-chat px-1"></i> Comment</p>
+                        <p> <i class="bi bi-share px-1"></i> Share</p>
+                    </div>
+                </article>
+
+                <article class="bg-body-tertiary bg-body-tertiary rounded p-3 pb-0 my-3 shadow rounded">
+                    <div class="d-flex flex-row gap-3">
+                        <img src="src/images/policarpo-quaresma.webp" alt="" width="50px" height="50px" class="rounded-circle"> <p class="d-flex flex-column gap-1"><strong>Policarpo Quaresma</strong> <span class="text-emphasis">6 hours ago</span> </p>
+                    </div>
+                    <div class="py-3 px-1">
+                        <p>to ficando louco...</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-around">
+                        <p> <i class="bi bi-hand-thumbs-up px-1"></i> Like</p>
+                        <p> <i class="bi bi-chat px-1"></i> Comment</p>
+                        <p> <i class="bi bi-share px-1"></i> Share</p>
+                    </div>
+                </article>
+                
+                
             </section>
             <!-- Trending topics -->
-            <article class="col-3">
+            <article class="col-3 trends">
+                <nav class="navbar bg-body-tertiary p-3 m-3 rounded shadow">
+                    <ul class="navbar-nav">
+                        <h5>Trends</h5>
+                            <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#"><i class="bi bi-person"></i> #OpenSource</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-people"></i> #NextJS</a>
+                            </li>
+                        
+                            <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-code"></i> #ReactJS</a>
+                            </li>
 
+                            <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-calendar-event"></i> #WebDevelopment</a>
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-bookmark"></i> #CSS</a>
+                            </li>
+                        
+                        </ul>
+                </nav>
+                <aside class="d-flex px-3">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="src/images/WhatsApp Image 2025-10-08 at 06.44.45.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="src/images/WhatsApp Image 2025-10-08 at 13.44.07.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="src/images/WhatsApp Image 2025-10-20 at 14.42.10.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                    </div>
+                </aside>
             </article>
         </div>
     </main>
-    
+    <!-- Modal -->
+    <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="postModalLabel">New Post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <textarea id="writePostInput" class="form-control" rows="4" placeholder="Share something..."></textarea>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Publish Post</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer class="text-center bg-body-tertiary pb-1 pt-2">
+        <p>&copy; 2025 DevHub. All rights reserved.</p>
+    </footer>
+
     <script type="module" src="./src/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
 

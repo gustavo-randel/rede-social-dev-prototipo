@@ -1,5 +1,5 @@
 
-@import 'bootstrap';
+@use 'bootstrap' as *;
 
 .dropdown-menu {
     min-width: 16rem;
@@ -17,4 +17,30 @@ article, div {
 
 main .nav-item {
     padding: 0 $p-1;
+}
+
+section {
+    input:hover{
+        cursor: pointer;
+    }
+}
+
+.trends li a {
+    color: #89e5fc;
+    text-decoration: underline #51dcff;;
+}
+
+@include media-breakpoint-down(md) {
+    .container {
+        padding: 0 1.25rem;
+   }
+}
+
+@include media-breakpoint-down(lg) {
+    .trends, .sidebar {
+        display: none;
+    }
+    .container {
+        padding: 0 1.75rem;
+    }
 }
