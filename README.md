@@ -11,17 +11,8 @@ Projeto front-end simples que simula uma rede social usando Bootstrap 5, Sass e 
 - .gitattributes
 - README.md
 
-## Instalação e execução
-````sh
-# instalar dependências
-npm install
-
-# rodar em modo dev (Vite)
-npm run dev
-
-# build de produção
-npm run build
-````
+## Visualização
+- https://gustavo-randel.github.io/prototipo-cruzeiro-bootstrap/
 
 ## Dependências principais
 - Bootstrap (JS e SCSS) — configurado nas importações em _bootstrap.scss e incluído em index.html via CDN para os ícones/JS.
