@@ -1,6 +1,14 @@
 
 @use 'bootstrap' as *;
 
+.btn-invisible {
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--#{$prefix}body-bg);
+  }
+}
+
 .dropdown-menu {
     min-width: 16rem;
 }
