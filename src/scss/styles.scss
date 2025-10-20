@@ -1,0 +1,20 @@
+
+@import 'bootstrap';
+
+.dropdown-menu {
+    min-width: 16rem;
+}
+
+.dropdown-item {
+    padding: $p-1/2 $p-1;
+}
+
+article, div {
+    img {
+        object-fit: cover;
+    }
+}
+
+main .nav-item {
+    padding: 0 $p-1;
+}
