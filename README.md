@@ -1,6 +1,6 @@
 # rede-social-dev-prototipo
 
-Projeto front-end simples usando Bootstrap 5, Sass e Vite.
+Projeto front-end simples que simula uma rede social usando Bootstrap 5, Sass e Vite.
 
 Principais arquivos
 - index.html — estrutura HTML principal, contém o elemento com id `#theme` usado para alternar tema.
